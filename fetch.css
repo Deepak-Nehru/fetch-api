@@ -1,0 +1,97 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: calc(33.33% - 10px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+body {
+    padding-top: 80px;
+    background: url('images/image1.jpg') center center;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px ;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style other elements and text for readability over the background */
+  .container, footer {
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for readability */
+    padding: 20px;
+    color: #000;
+  }
+
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 24px; 
+  }
+
+  .auth-buttons button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .contact-info {
+    margin-top: 10px;
+  }
+  
+  .contact-info p {
+    margin: 5px;
+  }
+  
+  

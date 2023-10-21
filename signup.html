@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" title="Font Awesome">
+</head>
+<body>
+<header class="wrapper" id="signup-wrapper">
+    <h1>Sign Up</h1>
+    <form id="signupForm" action="login.html" onsubmit="return validateForm()" method="get">
+        <div class="field email">
+            <div class="input-area">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <i class="icon fas fa-envelope"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt" id="emailError">Email can't be blank</div>
+        </div>
+        <div class="field password">
+            <div class="input-area">
+                <input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="20" required>
+                <i class="icon fas fa-lock"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+        </div>
+        <div class="field password">
+            <div class="input-area">
+                <input type="password" name="password" id="confirmPassword" placeholder="Confirm Password" minlength="8" maxlength="20" required>
+                <i class="icon fas fa-lock"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt" id="passwordError">Passwords do not match</div>
+        </div>
+        <input type="submit" value="Signup" >
+    </form>
+    <section class="login-txt">Already a member? <a id="login-link" href="login.html">Login</a></section>
+</header>
+<script src="signup.js"></script>
+</body>
+</html>
